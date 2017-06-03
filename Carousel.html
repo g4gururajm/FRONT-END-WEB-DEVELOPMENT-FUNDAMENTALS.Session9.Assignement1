@@ -1,0 +1,126 @@
+<!-- declaration refers to a DTD-->
+<!DOCTYPE html>
+<!-- Specifiying HTML language has English-->
+<html lang="en">
+
+<!--Head element-->
+<head>
+	<!-- The <meta> tag provides metadata about the HTML and Specify the character encoding for the HTML -->
+	<meta charset="UTF-8">
+
+	<!-- This meta tag provides metadata about the compatible with Internet explosers-->
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	 <!-- Define a description of your web page -->
+	<meta name="description" content="Free Web tutorials">
+
+	<!--  Define keywords for search engines -->
+	<meta name="keywords" content="HTML,CSS,XML, XHTML,JavaScript">
+
+	<!-- Define the author of a page -->
+	<meta name="author" content="Gururaj">
+
+	<!-- Setting the viewport to make your website look good on all devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- It defines the title of the document-->
+	<title>Bootstrap Example</title>
+
+	<!-- the link tag referances any external files called bootstrap files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- the link tag referances any external files called jquery files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- the link tag referances any external files called bootstrap and css -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- head ends here -->
+</head>
+
+<!-- Body of Doc start here --> 
+<body>
+
+	<!-- div with class container for entair doc of html-->
+	<div class="container">
+		<!--header2 defined here on top of the HTML doc -->
+		<h2>Carousel </h2>  
+		<!-- div eith id called mycarousel, class called caption-side and data-ride used from bootstrap lib -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!--defining order list with class Indicators used to set slider number on html doc -->
+		<ol class="carousel-indicators">
+			<!-- defining list item with class active for particular slide on DOC -->
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+    <!-- Wrapper for slides with carousel inner class -->
+    <div class="carousel-inner">
+		<!--div with item active of following image src -->
+        <div class="item active">
+		<!-- setting up img src with style width of 100% for first slide -->
+        <img src="microprocessor.jpg" alt="Microprocessor" style="width:100%;">
+		<!-- div with clas carousel-caption of defined img tag on doc-->
+		<div class="carousel-caption">
+			<!-- header3 is  defined here-->
+			<h3>Microprocessor</h3>
+			<!-- paragraph defined here -->
+			<p>Microprocessor is the Brain of Computers...</p>
+		<!-- div of class carousel-caption ends here -->
+		</div>
+		<!-- div of class item active ends here -->
+		</div>
+		<!-- div with class item defines the next slide-->
+		<div class="item">
+		<!-- setting up img src with style width of 100% for second slide -->
+        <img src="legacy.jpg" alt="legacy" style="width:100%;">
+		<!-- div with clas carousel-caption of defined img tag on doc-->
+		<div class="carousel-caption">
+			<!-- header3 is  defined here-->
+			<h3>Askmen</h3>
+			<!-- paragraph defined here -->
+			<p>High graphical themes for Computers...</p>
+		<!-- div of class carousel-caption ends here -->
+		</div>
+		<!-- div of class item active ends here -->
+		</div>
+		<!-- div with class item defines the next slide-->
+		<div class="item">
+		<!-- setting up img src with style width of 100% for third slide -->
+        <img src="ironman.jpg" alt="Ironman" style="width:100%;">
+		<!-- div with clas carousel-caption of defined img tag on doc-->
+		<div class="carousel-caption">
+			<!-- header3 is  defined here-->
+			<h3>Iron man</h3>
+			<!-- paragraph defined here -->
+			<p>Iron man High graphical themes for Computers...</p>
+		<!-- div of class carousel-caption ends here -->
+		</div>
+		<!-- div of class item active ends here -->
+		</div>
+	<!-- Wrapper for slides with carousel inner class div ends here-->	
+    </div>
+
+    <!-- Left controls with class left carousel-control for data slide-->
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<!-- span with class glyphicon for left moving slide -->
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<!-- slide for left move -->
+		<span class="sr-only">Previous</span>
+	</a>
+	<!-- Right controls with class left carousel-control for data slide-->
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<!-- span with class glyphicon for Right moving slide -->
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<!-- slide for right move -->
+		<span class="sr-only">Next</span>
+    </a>
+	<!-- div of  mycarousel, class called caption-side and data-ride ends here -->
+	</div>
+<!--Div of the html doc ends here -->
+</div>
+<!-- doby ends here -->
+</body>
+<!--html ends here --> 
+</html>
